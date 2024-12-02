@@ -135,9 +135,9 @@ A Spring Boot-based project implementing authentication, role-based access contr
 
 **Endpoint**: `GET /api/account`  
 **Response**:
-
+ ```json
 `[   {     "id": 1,     "firstname": "John",     "lastname": "Doe",     "username": "johndoe",     "email": "johndoe@example.com",     "roles": ["ADMIN", "USER"],     "createdAccountTime": "2024-12-01T12:00:00"   } ]`
-
+ ```
 ### 3. Update an Account
 
 **Endpoint**: `PUT /api/account/{id}`  
