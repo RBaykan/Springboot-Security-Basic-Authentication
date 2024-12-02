@@ -69,6 +69,7 @@ A Spring Boot-based project implementing authentication, role-based access contr
 
 - Restricts `/api/account/**` to `ADMIN` role.
 - Basic HTTP authentication enabled.
+- API access permissions can be modified in the AccountSecurityConfig class by updating the authorizeHttpRequests() configuration.
 
 ---
 
