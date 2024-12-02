@@ -71,7 +71,7 @@ A Spring Boot-based project implementing authentication, role-based access contr
 - Basic HTTP authentication enabled.
 - API access permissions can be modified in the AccountSecurityConfig class by updating the authorizeHttpRequests() configuration.
 	- Example:
-		-```java
+		- ```java
     		http.authorizeHttpRequests()
     		.requestMatchers("/api/account/**").hasRole("USER") // Change required role here
     		.anyRequest().authenticated();
