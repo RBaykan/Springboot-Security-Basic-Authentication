@@ -70,6 +70,14 @@ A Spring Boot-based project implementing authentication, role-based access contr
 - Restricts `/api/account/**` to `ADMIN` role.
 - Basic HTTP authentication enabled.
 - API access permissions can be modified in the AccountSecurityConfig class by updating the authorizeHttpRequests() configuration.
+	- Example:
+		-```java
+    		http.authorizeHttpRequests()
+    		.requestMatchers("/api/account/**").hasRole("USER") // Change required role here
+    		.anyRequest().authenticated();
+   		```
+
+
 
 ---
 
@@ -104,13 +112,6 @@ A Spring Boot-based project implementing authentication, role-based access contr
     ```
     
 4. Access API endpoints via Postman or your preferred client.
-5. Open H2 Console at `http://localhost:8080/h2-console`.
-
-	- Use the following credentials:
-	    - **JDBC URL**: `jdbc:h2:file:./dataBase`
-	    - **Username**: `root`
-	    - **Password**: `1234`
-
 ## Example Requests
 
 ### 1. Create an Account
