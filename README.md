@@ -75,11 +75,6 @@ A Spring Boot-based project implementing authentication, role-based access contr
 ## H2 Database
 
 ### Configuration
-
-Defined in `application.yml`:
-``` yaml
-spring:   datasource:     driverClassName: org.h2.Driver     url: jdbc:h2:file:./dataBase     username: root     password: 1234   jpa:     hibernate:       ddl-auto: update     database-platform: org.hibernate.dialect.H2Dialect     show-sql: true`
-```
 ### Access
 
 - URL: `http://localhost:8080/h2-console`
@@ -113,12 +108,11 @@ spring:   datasource:     driverClassName: org.h2.Driver     url: jdbc:h2:file:.
 1. Clone the repository.
 2. Configure the application in `application.yml`.
 3. Run the application using:
+
     
-    bash
-    
-    Kodu kopyala
-    
-    `mvn spring-boot:run`
+    ```bash
+    mvn spring-boot:run
+    ```
     
 4. Access API endpoints via Postman or your preferred client.
 5. Open H2 Console at `http://localhost:8080/h2-console`.
