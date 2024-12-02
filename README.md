@@ -128,24 +128,47 @@ A Spring Boot-based project implementing authentication, role-based access contr
 
 **Endpoint**: `POST /api/account`  
 **Request Body**:
-
-`{   "firstname": "John",   "lastname": "Doe",   "username": "johndoe",   "password": "password123",   "email": "johndoe@example.com",   "roles": ["ADMIN", "USER"] }`
+```json
+{
+  "firstname": "John",
+  "lastname": "Doe",
+  "username": "johndoe",
+  "password": "password123",
+  "email": "johndoe@example.com",
+  "roles": ["ADMIN", "USER"]
+}
+```
 
 ### 2. Get All Accounts
 
 **Endpoint**: `GET /api/account`  
 **Response**:
  ```json
-`[   {     "id": 1,     "firstname": "John",     "lastname": "Doe",     "username": "johndoe",     "email": "johndoe@example.com",     "roles": ["ADMIN", "USER"],     "createdAccountTime": "2024-12-01T12:00:00"   } ]`
+  {
+    "id": 1,
+    "firstname": "John",
+    "lastname": "Doe",
+    "username": "johndoe",
+    "email": "johndoe@example.com",
+    "roles": ["ADMIN", "USER"],
+    "createdAccountTime": "2024-12-01T12:00:00"
+  }
  ```
 ### 3. Update an Account
 
 **Endpoint**: `PUT /api/account/{id}`  
 **Request Body**:
 
-
-`{   "firstname": "Jane",   "lastname": "Doe",   "username": "janedoe",   "password": "newpassword",   "email": "janedoe@example.com",   "roles": ["USER"] }`
-
+```json
+{
+  "firstname": "Jane",
+  "lastname": "Doe",
+  "username": "janedoe",
+  "password": "newpassword",
+  "email": "janedoe@example.com",
+  "roles": ["USER"]
+}
+ ```
 ### 4. Delete an Account
 
 **Endpoint**: `DELETE /api/account/{id}`
