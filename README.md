@@ -75,7 +75,6 @@ A Spring Boot-based project implementing authentication, role-based access contr
     		http.authorizeHttpRequests()
     		.requestMatchers("/api/account/**").hasRole("USER") // Change required role here
     		.anyRequest().authenticated();
-    ```
 
 
 
