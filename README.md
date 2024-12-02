@@ -72,18 +72,6 @@ A Spring Boot-based project implementing authentication, role-based access contr
 
 ---
 
-## H2 Database
-
-### Configuration
-### Access
-
-- URL: `http://localhost:8080/h2-console`
-- JDBC URL: `jdbc:h2:file:./dataBase`
-- Username: `root`
-- Password: `1234`
-
----
-
 ## Endpoints
 
 |Method|Endpoint|Description|Role Required|
