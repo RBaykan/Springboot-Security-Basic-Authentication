@@ -119,11 +119,11 @@ A Spring Boot-based project implementing authentication, role-based access contr
 **Request Body**:
 ```json
 {
-  "firstname": "John",
-  "lastname": "Doe",
-  "username": "johndoe",
-  "password": "password123",
-  "email": "johndoe@example.com",
+  "firstname": "Ali",
+  "lastname": "Veli",
+  "username": "ali_veli",
+  "password": "1234",
+  "email": "ali_veli@example.com",
   "roles": ["ADMIN", "USER"]
 }
 ```
@@ -135,11 +135,11 @@ A Spring Boot-based project implementing authentication, role-based access contr
  ```json
   {
     "id": 1,
-    "firstname": "John",
-    "lastname": "Doe",
-    "username": "johndoe",
-    "email": "johndoe@example.com",
-    "roles": ["ADMIN", "USER"],
+    "firstname": "Ali",
+    "lastname": "Veli",
+    "username": "ali_veli",
+    "password": "1234",
+    "email": "ali_veli@example.com",
     "createdAccountTime": "2024-12-01T12:00:00"
   }
  ```
@@ -150,12 +150,11 @@ A Spring Boot-based project implementing authentication, role-based access contr
 
 ```json
 {
-  "firstname": "Jane",
-  "lastname": "Doe",
-  "username": "janedoe",
-  "password": "newpassword",
-  "email": "janedoe@example.com",
-  "roles": ["USER"]
+  "firstname": "Ali",
+  "lastname": "Veli",
+  "username": "veli_ali",
+  "password": "1234",
+  "email": "ali_veli@example.com",
 }
  ```
 ### 4. Delete an Account
