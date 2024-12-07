@@ -19,7 +19,6 @@ A Spring Boot-based project implementing authentication, role-based access contr
     - Create, read, update, and delete (CRUD) accounts via `AccountController`.
 3. **H2 Database Configuration**:
     
-    - In-memory database for development/testing.
     - Configurable via `application.yml`.
 4. **Role Management**:
     
